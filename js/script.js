@@ -39,8 +39,8 @@ console.log(applyFunction(user, getFullName))
 // ----------------------------
 
 function bindFunction(context, func, ...restArgs) {
-    return function () {
-        return wireContext(context, func, restArgs)
+    return function (...innerRestArgs) {
+        return wireContext(context, func, restArgs.concat(innerRestArgs))
     };
 }
 
