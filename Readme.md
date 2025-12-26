@@ -1,1 +1,6 @@
-### Homework #1
+### Homework #21
+
+Description
+
+Написати свою реалізацію функції bind, call, aplly
+При реалізації фунції заборонено використовувати методи  bind, call, aplly
