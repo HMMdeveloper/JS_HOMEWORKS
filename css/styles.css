@@ -1,0 +1,12 @@
+.selected {
+    background: #d0ebff;
+}
+
+li {
+    cursor: pointer;
+}
+
+button.remove {
+    margin-left: 8px;
+    cursor: pointer;
+}
