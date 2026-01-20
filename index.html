@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
-    <script src="./js/script.js"></script>
+    <form id="form" novalidate>
+        <div class="field">
+            <label>Email</label>
+            <input type="email" name="email">
+            <small class="error"></small>
+        </div>
+
+        <div class="field">
+            <label>Password</label>
+            <div class="password-row">
+                <input type="password" name="password">
+                <button type="button" id="togglePassword">👁</button>
+            </div>
+            <div class="strength" id="strength"></div>
+            <small class="error"></small>
+        </div>
+
+        <div class="field">
+            <label>Confirm your password</label>
+            <input type="password" name="confirm">
+            <small class="error"></small>
+        </div>
+
+        <div class="field">
+            <label>Age</label>
+            <input type="number" name="age">
+            <small class="error"></small>
+        </div>
+
+        <div class="field">
+            <label>City</label>
+            <select name="city">
+                <option value="">-- choose --</option>
+                <option>Київ</option>
+                <option>Львів</option>
+                <option>Одеса</option>
+            </select>
+            <small class="error"></small>
+        </div>
+
+        <div class="field checkbox">
+            <label>
+                <input type="checkbox" name="terms">
+                Agree terms
+            </label>
+            <small class="error"></small>
+        </div>
+
+        <div class="actions">
+            <button type="submit">Register</button>
+            <button type="button" id="clear">clear</button>
+        </div>
+    </form>
+
+    <pre id="result"></pre>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
